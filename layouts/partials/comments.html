@@ -3,3 +3,6 @@
 	{{ template "_internal/disqus.html" . }}
 </section>
 {{ end }}
+{{ if .Site.Params.graphComment }}
+<div id="graphcomment"></div>
+{{ end }}

@@ -12,6 +12,9 @@
 			{{ .Title }}
 			</a>
 		</h3>
+		{{ if .Site.Params.graphComment }}
+		<span class="gc-counter" data-url="{{ .Permalink }}">0</span> comments
+		{{- end }}
 		{{- with .Params.lead }}
 		<p class="list__lead post__lead">{{ . }}</p>
 		{{- end }}
